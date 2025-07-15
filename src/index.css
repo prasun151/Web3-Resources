@@ -1,61 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
-    --background: 216 12% 8%;
-    --foreground: 43 16% 84%;
-
-    --card: 216 12% 8%;
-    --card-foreground: 43 16% 84%;
-
-    --popover: 216 12% 8%;
-    --popover-foreground: 43 16% 84%;
-
-    --primary: 43 16% 84%;
-    --primary-foreground: 216 12% 8%;
-
-    --secondary: 216 12% 12%;
-    --secondary-foreground: 43 16% 84%;
-
-    --muted: 216 12% 12%;
-    --muted-foreground: 43 8% 65%;
-
-    --accent: 158 58% 45%;
-    --accent-foreground: 216 12% 8%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 43 16% 84%;
-
-    --border: 216 12% 15%;
-    --input: 216 12% 15%;
-    --ring: 158 58% 45%;
-
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 0%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 0%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 0%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 80%;
+    --accent: 0 0% 100%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 0% 100%;
+    --destructive-foreground: 0 0% 0%;
+    --border: 0 0% 100%;
+    --input: 0 0% 100%;
+    --ring: 0 0% 100%;
     --radius: 0.5rem;
-
-    --sidebar-background: 216 12% 8%;
-    --sidebar-foreground: 43 16% 84%;
-    --sidebar-primary: 43 16% 84%;
-    --sidebar-primary-foreground: 216 12% 8%;
-    --sidebar-accent: 216 12% 12%;
-    --sidebar-accent-foreground: 43 16% 84%;
-    --sidebar-border: 216 12% 15%;
-    --sidebar-ring: 158 58% 45%;
+    --sidebar-background: 0 0% 0%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 0 0% 0%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 100%;
+    --sidebar-ring: 0 0% 100%;
   }
 
-}
-
-@layer base {
   * {
-    @apply border-border;
+    @apply font-jetbrains-mono;
   }
 
   body {
-    @apply bg-background text-foreground font-eb-garamond;
+    @apply bg-background text-foreground;
   }
 }
